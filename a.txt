@@ -1,0 +1,421 @@
+Last login: Thu Oct 15 18:54:01 on ttys003
+SuzeePtekiMacBook-Pro:~ suzeepp$ export PATH=/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11R6/bin
+SuzeePtekiMacBook-Pro:~ suzeepp$ sudo gem install cocoapos
+ERROR:  Could not find a valid gem 'cocoapos' (>= 0), here is why:
+          Unable to download data from https://rubygems.org/ - Errno::ECONNREFUSED: Connection refused - connect(2) (https://rubygems.org/latest_specs.4.8.gz)
+SuzeePtekiMacBook-Pro:~ suzeepp$ sudo gem install cocoapods
+ERROR:  Could not find a valid gem 'cocoapods' (>= 0), here is why:
+          Unable to download data from https://rubygems.org/ - Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://rubygems.org/latest_specs.4.8.gz)
+SuzeePtekiMacBook-Pro:~ suzeepp$ gem sources -1
+ERROR:  While executing gem ... (OptionParser::InvalidOption)
+    invalid option: -1
+SuzeePtekiMacBook-Pro:~ suzeepp$ pod setup
+-bash: pod: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ gem sources --remove https://rubygems.org/
+https://rubygems.org/ removed from sources
+SuzeePtekiMacBook-Pro:~ suzeepp$ sudo gem install cocoapods
+ERROR:  Could not find a valid gem 'cocoapods' (>= 0) in any repository
+SuzeePtekiMacBook-Pro:~ suzeepp$ $ gem sources -a https://ruby.taobao.org/
+-bash: $: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ $ gem sources -a https://ruby.taobao.org/
+-bash: $: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ gem sources -a https://ruby.taobao.org/
+https://ruby.taobao.org/ added to sources
+SuzeePtekiMacBook-Pro:~ suzeepp$ gem sources -l
+*** CURRENT SOURCES ***
+
+https://ruby.taobao.org/
+SuzeePtekiMacBook-Pro:~ suzeepp$ pod setup
+-bash: pod: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ sudo gem update --system
+Updating rubygems-update
+Fetching: rubygems-update-2.4.8.gem (100%)
+Successfully installed rubygems-update-2.4.8
+Parsing documentation for rubygems-update-2.4.8
+Installing ri documentation for rubygems-update-2.4.8
+Installing darkfish documentation for rubygems-update-2.4.8
+Installing RubyGems 2.4.8
+RubyGems 2.4.8 installed
+Parsing documentation for rubygems-2.4.8
+pod Installing ri documentation for rubygems-2.4.8
+
+=== 2.4.8 / 2015-06-08
+
+Bug fixes:
+
+* Tightened API endpoint checks for CVE-2015-3900
+
+=== 2.4.7 / 2015-05-14
+
+Bug fixes:
+
+* Backport: Limit API endpoint to original security domain for CVE-2015-3900.
+  Fix by claudijd
+
+=== 2.4.6 / 2014-02-05
+
+Bug fixes:
+
+* Fixed resolving gems with both upper and lower requirement boundaries.
+  Issue #1141 by Jakub Jirutka.
+* Moved extension directory after require_paths to fix missing constant bugs
+  in some gems with C extensions.  Issue #784 by André Arko, pull request
+  #1137 by Barry Allard.
+* Use Gem::Dependency#requirement when adding a dependency to an existing
+  dependency instance.  Pull request #1101 by Josh Cheek.
+* Fixed warning of shadowed local variable in Gem::Specification.  Pull request
+  #1109 by Rohit Arondekar
+* Gem::Requirement should always sort requirements before coercion to Hash.
+  Pull request #1139 by Eito Katagiri.
+* The `gem open` command should change the current working directory before
+  opening the editor.  Pull request #1142 by Alex Wood.
+* Ensure quotes are stripped from the Windows launcher script used to install
+  gems.  Pull request #1115 by Youngjun Song.
+* Fixed errors when writing to NFS to to 0444 files.  Issue #1161 by Emmanuel
+  Hadoux.
+* Removed dead code in Gem::StreamUI.  Pull request #1117 by mediaslave24.
+* Fixed typos.  Pull request #1096 by hakeda.
+* Relaxed CMake dependency for RHEL 6 and CentOS 6.  Pull request #1124 by Vít
+  Ondruch.
+* Relaxed Psych dependency.  Pull request #1128 by Vít Ondruch.
+
+=== 2.4.5 / 2014-12-03
+
+Bug fixes:
+
+* Improved speed of requiring gems.  (Around 25% for a 60 gem test).  Pull
+  request #1060 by unak.
+* RubyGems no longer attempts to look up gems remotely with the --local flag.
+  Pull request #1084 by Jeremy Evans.
+* Executable stubs use the correct gem version when RUBYGEMS_GEMDEPS is
+  active.  Issue #1072 by Michael Kaiser-Nyman.
+* Fixed handling of pinned gems in lockfiles with versions.  Issue #1078 by
+  Ian Ker-Seymer.
+* Fixed handling of git@example:gem.git URIs.  Issue #1054 by Mogutan Mogu.
+* Fixed handling of platforms retrieved from the dependencies API.  Issue
+  #1058 and patch suggestion by tux-mind.
+* RubyGems now suggests a copy-pasteable `gem pristine` command when
+  extensions are missing.  Pull request #1057 by Shannon Skipper.
+* Improved errors for long file names when packaging.  Pull request #1016 by
+  Piotrek Bator.
+* `gem pristine` now skips gems cannot be found remotely.  Pull request #1064
+  by Tuomas Kareinen.
+* `gem pristine` now caches gems to the proper directory.  Pull request #1064
+  by Tuomas Kareinen.
+* `gem pristine` now skips bundled gems properly.  Pull request #1064 by
+  Tuomas Kareinen.
+* Improved interoperability of Vagrant with RubyGems.  Pull request #1057 by
+  Vít Ondruch.
+* Renamed CONTRIBUTING to CONTRIBUTING.rdoc to allow markup.  Pull request
+  #1090 by Roberto Miranda.
+* Switched from #partition to #reject as only one collection is used.  Pull
+  request #1074 by Tuomas Kareinen.
+* Fixed installation of gems on systems using memory-mapped files.  Pull
+  request #1038 by Justin Li.
+* Fixed bug in Gem::Text#min3 where `a == b < c`.  Pull request #1026 by
+  fortissimo1997.
+* Fixed uninitialized variable warning in BasicSpecification.  Pull request
+  #1019 by Piotr Szotkowski.
+* Removed unneeded exception handling for cyclic dependencies.  Pull request
+  #1043 by Jens Wille.
+* Fixed grouped expression warning.  Pull request #1081 by André Arko.
+* Fixed handling of platforms when writing lockfiles.
+
+=== 2.4.4 / 2014-11-12
+
+Bug fixes:
+
+* Add alternate Root CA for upcoming certificate change. Fixes #1050 by
+  Protosac
+
+=== 2.4.3 / 2014-11-10
+
+Bug fixes:
+
+* Fix redefine MirrorCommand issue. Pull request #1044 by @akr.
+* Fix typo in platform= docs.  Pull request #1048 by @jasonrclark
+* Add root SSL certificates for upcoming certificate change.  Fixes #1050 by
+  Protosac
+
+=== 2.4.2 / 2014-10-01
+
+This release was sponsored by Ruby Central.
+
+Bug fixes:
+
+* RubyGems now correctly matches wildcard no_proxy hosts.  Issue #997 by
+  voelzemo.
+* Added support for missing git_source method in the gem dependencies API.
+* Fixed handling of git gems with an alternate install directory.
+* Lockfiles will no longer be truncated upon resolution errors.
+* Fixed messaging for `gem owner -a`.  Issue #1004 by Aaron Patterson, Ryan
+  Davis.
+* Removed meaningless ensure.  Pull request #1003 by gogotanaka.
+* Improved wording of --source option help.  Pull request #989 by Jason Clark.
+* Empty build_info files are now ignored.  Issue #903 by Adan Alvarado.
+* Gem::Installer ignores dependency checks when installing development
+  dependencies.  Issue #994 by Jens Willie.
+* `gem update` now continues after dependency errors.  Issue #993 by aaronchi.
+* RubyGems no longer warns about semantic version dependencies for the 0.x
+  range.  Issue #987 by Jeff Felchner, pull request #1006 by Hsing-Hui Hsu.
+* Added minimal lock to allow multithread installation of gems.  Issue #982
+  and pull request #1005 by Yorick Peterse
+* RubyGems now considers prerelease dependencies as it did in earlier versions
+  when --prerelease is given.  Issue #990 by Jeremy Tryba.
+* Updated capitalization in README.  Issue #1010 by Ben Bodenmiller.
+* Fixed activating gems from a Gemfile for default gems.  Issue #991 by khoan.
+* Fixed windows stub script generation for Cygwin.  Issue #1000 by Brett
+  DiFrischia.
+* Allow gem bindir and ruby.exe to live in separate diretories.  Pull request
+  #942 by Ian Flynn.
+* Fixed handling of gemspec in gem dependencies files to match Bundler
+  behavior.  Issue #1020 by Michal Papis.
+* Fixed `gem update` when updating to prereleases.  Issue #1028 by Santiago
+  Pastorino.
+* RubyGems now fails immediately when a git reference cannot be found instead
+  of spewing git errors.  Issue #1031 by Michal Papis
+
+=== 2.4.1 / 2014-07-17
+
+Bug fixes:
+
+* RubyGems can now be updated on Ruby implementations that do not support
+  vendordir in RbConfig::CONFIG.  Issue #974 by net1957.
+
+=== 2.4.0 / 2014-07-16
+
+Minor enhancements:
+
+* The contents command now supports a --show-install-dir option that shows
+  only the directory the gem is installed in.  Feature request #966 by Akinori
+  MUSHA.
+* Added a --build-root option to the install command for packagers.  Pull
+  request #965 by Marcus Rückert.
+* Added vendor gem support to RubyGems.  Package managers may now install gems
+  in Gem.vendor_dir with the --vendor option to gem install.  Issue #943 by
+  Marcus Rückert.
+
+Bug fixes:
+
+* Kernel#gem now respects the prerelease flag when activating gems.
+  Previously this behavior was undefined which could lead to bugs when a
+  prerelease version was unintentionally activated.  Bug #938 by Joe Ferris.
+* RubyGems now prefers gems from git over installed gems.  This allows gems
+  from git to override an installed gem with the same name and version.  Bug
+  #944 by Thomas Kriechbaumer.
+* Fixed handling of git gems in a lockfile with unversioned dependencies.  Bug
+  #940 by Michael Kaiser-Nyman.
+* The ruby directive in a gem dependencies file is ignored when installing.
+  Bug #941 by Michael Kaiser-Nyman.
+* Added open to list of builtin commands (`gem open` now works).  Reported by
+  Espen Antonsen.
+* `gem open` now works with command-line editors.  Pull request #962 by Tim
+  Pope.
+* `gem install -g` now respects `--conservative`.  Pull request #950 by Jeremy
+  Evans.
+* RubyGems releases announcements now now include checksums.  Bug #939 by
+  Alexander E. Fischer.
+* RubyGems now expands ~ in $PATH when checking if installed executables will
+  be runnable.  Pull request #945 by Alex Talker.
+* Fixed `gem install -g --explain`.  Issue #947 by Luis Lavena.  Patch by
+  Hsing-Hui Hsu.
+* RubyGems locks less during gem activation.  Pull request #951 by Aaron
+  Patterson and Justin Searls, #969 by Jeremy Tryba.
+* Kernel#gem is now thread-safe.  Pull request #967 by Aaron Patterson.
+* RubyGems now handles spaces in directory names for some parts of extension
+  building.  Pull request #949 by Tristan Hill.
+* RubyGems no longer defines an empty Date class.  Pull Request #948 by Benoit
+  Daloze.
+* RubyGems respects --document options for `gem update` again.  Bug 946 by
+  jonforums.  Patch by Hsing-Hui Hsu.
+* RubyGems generates documentation again with --ignore-dependencies.  Bug #961
+  by Pulfer.
+* RubyGems can install extensions across partitions now.  Pull request #970 by
+  Michael Scherer.
+* `-s` is now short for `--source` which resolves an ambiguity with
+  --no-suggestions.  Pull request #955 by Alexander Kahn.
+* Added extra test for ~> for 0.0.X versions.  Pull request #958 by Mark
+  Lorenz.
+* Fixed typo in gem updated help.  Pull request #952 by Per Modin.
+* Clarified that the gem description should not be excessively long.  Part of
+  bug #956 by Renier Morales.
+* Hid documentation of outdated test_files related methods in Specification.
+  Guides issue #90 by Emil Soman.
+* RubyGems now falls back to the old index if the rubygems.org API fails
+  during gem resolution.
+
+
+
+------------------------------------------------------------------------------
+
+RubyGems installed the following executables:
+	/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/gem
+
+Ruby Interactive (ri) documentation was installed. ri is kind of like man 
+pages for ruby libraries. You may access it like this:
+  ri Classname
+  ri Classname.class_method
+  ri Classname#instance_method
+If you do not wish to install this documentation in the future, use the
+--no-document flag, or set it as the default in your ~/.gemrc file. See
+'gem help env' for details.
+
+RubyGems system software updated
+SuzeePtekiMacBook-Pro:~ suzeepp$ pod search AFNetworking
+-bash: pod: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ pod setup
+-bash: pod: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ pod install
+-bash: pod: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ git submodule update --init --recursive
+fatal: Not a git repository (or any of the parent directories): .git
+SuzeePtekiMacBook-Pro:~ suzeepp$ pod install
+-bash: pod: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ gem sources -l
+*** CURRENT SOURCES ***
+
+https://ruby.taobao.org/
+SuzeePtekiMacBook-Pro:~ suzeepp$ pod setup
+-bash: pod: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ gem install cocoapods --user-install
+Fetching: nap-1.0.0.gem (100%)
+WARNING:  You don't have /Users/suzeepp/.gem/ruby/2.0.0/bin in your PATH,
+	  gem executables will not run.
+Successfully installed nap-1.0.0
+Fetching: thread_safe-0.3.5.gem (100%)
+Successfully installed thread_safe-0.3.5
+Fetching: minitest-5.8.1.gem (100%)
+Successfully installed minitest-5.8.1
+Fetching: tzinfo-1.2.2.gem (100%)
+Successfully installed tzinfo-1.2.2
+Fetching: i18n-0.7.0.gem (100%)
+Successfully installed i18n-0.7.0
+Fetching: activesupport-4.2.4.gem (100%)
+Successfully installed activesupport-4.2.4
+Fetching: escape-0.0.4.gem (100%)
+Successfully installed escape-0.0.4
+Fetching: colored-1.2.gem (100%)
+Successfully installed colored-1.2
+Fetching: molinillo-0.4.0.gem (100%)
+Successfully installed molinillo-0.4.0
+Fetching: netrc-0.7.8.gem (100%)
+Successfully installed netrc-0.7.8
+Fetching: cocoapods-trunk-0.6.4.gem (100%)
+Successfully installed cocoapods-trunk-0.6.4
+Fetching: cocoapods-try-0.5.1.gem (100%)
+Successfully installed cocoapods-try-0.5.1
+Fetching: cocoapods-stats-0.6.2.gem (100%)
+Successfully installed cocoapods-stats-0.6.2
+Fetching: cocoapods-search-0.1.0.gem (100%)
+Successfully installed cocoapods-search-0.1.0
+Fetching: cocoapods-plugins-0.4.2.gem (100%)
+Successfully installed cocoapods-plugins-0.4.2
+Fetching: cocoapods-downloader-0.9.3.gem (100%)
+Successfully installed cocoapods-downloader-0.9.3
+Fetching: claide-0.9.1.gem (100%)
+Successfully installed claide-0.9.1
+Fetching: xcodeproj-0.28.2.gem (100%)
+Successfully installed xcodeproj-0.28.2
+Fetching: fuzzy_match-2.0.4.gem (100%)
+Successfully installed fuzzy_match-2.0.4
+Fetching: cocoapods-core-0.39.0.gem (100%)
+Successfully installed cocoapods-core-0.39.0
+Fetching: cocoapods-0.39.0.gem (100%)
+Successfully installed cocoapods-0.39.0
+Parsing documentation for nap-1.0.0
+Installing ri documentation for nap-1.0.0
+Parsing documentation for thread_safe-0.3.5
+Installing ri documentation for thread_safe-0.3.5
+Parsing documentation for minitest-5.8.1
+Installing ri documentation for minitest-5.8.1
+Parsing documentation for tzinfo-1.2.2
+Installing ri documentation for tzinfo-1.2.2
+Parsing documentation for i18n-0.7.0
+Installing ri documentation for i18n-0.7.0
+Parsing documentation for activesupport-4.2.4
+unable to convert "\x84" from ASCII-8BIT to UTF-8 for lib/active_support/values/unicode_tables.dat, skipping
+Installing ri documentation for activesupport-4.2.4
+Parsing documentation for escape-0.0.4
+Installing ri documentation for escape-0.0.4
+Parsing documentation for colored-1.2
+Installing ri documentation for colored-1.2
+Parsing documentation for molinillo-0.4.0
+Installing ri documentation for molinillo-0.4.0
+Parsing documentation for netrc-0.7.8
+Installing ri documentation for netrc-0.7.8
+Parsing documentation for cocoapods-trunk-0.6.4
+Installing ri documentation for cocoapods-trunk-0.6.4
+Parsing documentation for cocoapods-try-0.5.1
+Installing ri documentation for cocoapods-try-0.5.1
+Parsing documentation for cocoapods-stats-0.6.2
+Installing ri documentation for cocoapods-stats-0.6.2
+Parsing documentation for cocoapods-search-0.1.0
+Installing ri documentation for cocoapods-search-0.1.0
+Parsing documentation for cocoapods-plugins-0.4.2
+Installing ri documentation for cocoapods-plugins-0.4.2
+Parsing documentation for cocoapods-downloader-0.9.3
+Installing ri documentation for cocoapods-downloader-0.9.3
+Parsing documentation for claide-0.9.1
+Installing ri documentation for claide-0.9.1
+Parsing documentation for xcodeproj-0.28.2
+Installing ri documentation for xcodeproj-0.28.2
+Parsing documentation for fuzzy_match-2.0.4
+Installing ri documentation for fuzzy_match-2.0.4
+Parsing documentation for cocoapods-core-0.39.0
+Installing ri documentation for cocoapods-core-0.39.0
+Parsing documentation for cocoapods-0.39.0
+Installing ri documentation for cocoapods-0.39.0
+21 gems installed
+SuzeePtekiMacBook-Pro:~ suzeepp$ gem which cocoapods
+/Users/suzeepp/.gem/ruby/2.0.0/gems/cocoapods-0.39.0/lib/cocoapods.rb
+SuzeePtekiMacBook-Pro:~ suzeepp$ /Users/eloy gem which cocoapods
+-bash: /Users/eloy: No such file or directory
+SuzeePtekiMacBook-Pro:~ suzeepp$ gem which cocoapods
+/Users/suzeepp/.gem/ruby/2.0.0/gems/cocoapods-0.39.0/lib/cocoapods.rb
+SuzeePtekiMacBook-Pro:~ suzeepp$ pod setup
+-bash: pod: command not found
+SuzeePtekiMacBook-Pro:~ suzeepp$ cd WeatherDemo
+-bash: cd: WeatherDemo: No such file or directory
+SuzeePtekiMacBook-Pro:~ suzeepp$ /Users/suzeepp/Documents/WeatherApp 
+-bash: /Users/suzeepp/Documents/WeatherApp: is a directory
+SuzeePtekiMacBook-Pro:~ suzeepp$ cd /Users/suzeepp/Documents/WeatherApp 
+SuzeePtekiMacBook-Pro:WeatherApp suzeepp$ ls
+WeatherApp		WeatherAppUITests
+WeatherAppTests		WeatherDemo.xcodeproj
+SuzeePtekiMacBook-Pro:WeatherApp suzeepp$ cd W*
+SuzeePtekiMacBook-Pro:WeatherApp suzeepp$ LS
+AppDelegate.swift	Base.lproj		ViewController.swift
+Assets.xcassets		Info.plist
+SuzeePtekiMacBook-Pro:WeatherApp suzeepp$ cd W*
+-bash: cd: W*: No such file or directory
+SuzeePtekiMacBook-Pro:WeatherApp suzeepp$ ls
+AppDelegate.swift	Base.lproj		ViewController.swift
+Assets.xcassets		Info.plist
+SuzeePtekiMacBook-Pro:WeatherApp suzeepp$ cd /Users/suzeepp/Documents/WeatherApp 
+SuzeePtekiMacBook-Pro:WeatherApp suzeepp$ cd /Users/suzeepp/Documents/WeatherApp
+SuzeePtekiMacBook-Pro:WeatherApp suzeepp$ vi Podfile
+
+ttform :ios, '8.0'
+pod 'AFNetWorking'
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
