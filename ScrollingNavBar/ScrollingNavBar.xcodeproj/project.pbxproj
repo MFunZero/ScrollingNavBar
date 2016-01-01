@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BEB2AFB1BD389E4001208BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEB2AFA1BD389E4001208BB /* AppDelegate.swift */; };
+		6BEB2AFD1BD389E4001208BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEB2AFC1BD389E4001208BB /* ViewController.swift */; };
+		6BEB2B001BD389E4001208BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEB2AFE1BD389E4001208BB /* Main.storyboard */; };
+		6BEB2B021BD389E4001208BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BEB2B011BD389E4001208BB /* Assets.xcassets */; };
+		6BEB2B051BD389E4001208BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEB2B031BD389E4001208BB /* LaunchScreen.storyboard */; };
+		6BEB2B101BD389E4001208BB /* ScrollingNavBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEB2B0F1BD389E4001208BB /* ScrollingNavBarTests.swift */; };
+		6BEB2B1B1BD389E4001208BB /* ScrollingNavBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEB2B1A1BD389E4001208BB /* ScrollingNavBarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BEB2B0C1BD389E4001208BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BEB2AEF1BD389E4001208BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BEB2AF61BD389E4001208BB;
+			remoteInfo = ScrollingNavBar;
+		};
+		6BEB2B171BD389E4001208BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BEB2AEF1BD389E4001208BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BEB2AF61BD389E4001208BB;
+			remoteInfo = ScrollingNavBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BEB2AF71BD389E4001208BB /* ScrollingNavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollingNavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BEB2AFA1BD389E4001208BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BEB2AFC1BD389E4001208BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BEB2AFF1BD389E4001208BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BEB2B011BD389E4001208BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BEB2B041BD389E4001208BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BEB2B061BD389E4001208BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BEB2B0B1BD389E4001208BB /* ScrollingNavBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollingNavBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BEB2B0F1BD389E4001208BB /* ScrollingNavBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingNavBarTests.swift; sourceTree = "<group>"; };
+		6BEB2B111BD389E4001208BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BEB2B161BD389E4001208BB /* ScrollingNavBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollingNavBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BEB2B1A1BD389E4001208BB /* ScrollingNavBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingNavBarUITests.swift; sourceTree = "<group>"; };
+		6BEB2B1C1BD389E4001208BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BEB2AF41BD389E4001208BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEB2B081BD389E4001208BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEB2B131BD389E4001208BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BEB2AEE1BD389E4001208BB = {
+			isa = PBXGroup;
+			children = (
+				6BEB2AF91BD389E4001208BB /* ScrollingNavBar */,
+				6BEB2B0E1BD389E4001208BB /* ScrollingNavBarTests */,
+				6BEB2B191BD389E4001208BB /* ScrollingNavBarUITests */,
+				6BEB2AF81BD389E4001208BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BEB2AF81BD389E4001208BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BEB2AF71BD389E4001208BB /* ScrollingNavBar.app */,
+				6BEB2B0B1BD389E4001208BB /* ScrollingNavBarTests.xctest */,
+				6BEB2B161BD389E4001208BB /* ScrollingNavBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BEB2AF91BD389E4001208BB /* ScrollingNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				6BEB2AFA1BD389E4001208BB /* AppDelegate.swift */,
+				6BEB2AFC1BD389E4001208BB /* ViewController.swift */,
+				6BEB2AFE1BD389E4001208BB /* Main.storyboard */,
+				6BEB2B011BD389E4001208BB /* Assets.xcassets */,
+				6BEB2B031BD389E4001208BB /* LaunchScreen.storyboard */,
+				6BEB2B061BD389E4001208BB /* Info.plist */,
+			);
+			path = ScrollingNavBar;
+			sourceTree = "<group>";
+		};
+		6BEB2B0E1BD389E4001208BB /* ScrollingNavBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BEB2B0F1BD389E4001208BB /* ScrollingNavBarTests.swift */,
+				6BEB2B111BD389E4001208BB /* Info.plist */,
+			);
+			path = ScrollingNavBarTests;
+			sourceTree = "<group>";
+		};
+		6BEB2B191BD389E4001208BB /* ScrollingNavBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BEB2B1A1BD389E4001208BB /* ScrollingNavBarUITests.swift */,
+				6BEB2B1C1BD389E4001208BB /* Info.plist */,
+			);
+			path = ScrollingNavBarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BEB2AF61BD389E4001208BB /* ScrollingNavBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEB2B1F1BD389E4001208BB /* Build configuration list for PBXNativeTarget "ScrollingNavBar" */;
+			buildPhases = (
+				6BEB2AF31BD389E4001208BB /* Sources */,
+				6BEB2AF41BD389E4001208BB /* Frameworks */,
+				6BEB2AF51BD389E4001208BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollingNavBar;
+			productName = ScrollingNavBar;
+			productReference = 6BEB2AF71BD389E4001208BB /* ScrollingNavBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BEB2B0A1BD389E4001208BB /* ScrollingNavBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEB2B221BD389E4001208BB /* Build configuration list for PBXNativeTarget "ScrollingNavBarTests" */;
+			buildPhases = (
+				6BEB2B071BD389E4001208BB /* Sources */,
+				6BEB2B081BD389E4001208BB /* Frameworks */,
+				6BEB2B091BD389E4001208BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BEB2B0D1BD389E4001208BB /* PBXTargetDependency */,
+			);
+			name = ScrollingNavBarTests;
+			productName = ScrollingNavBarTests;
+			productReference = 6BEB2B0B1BD389E4001208BB /* ScrollingNavBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BEB2B151BD389E4001208BB /* ScrollingNavBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEB2B251BD389E4001208BB /* Build configuration list for PBXNativeTarget "ScrollingNavBarUITests" */;
+			buildPhases = (
+				6BEB2B121BD389E4001208BB /* Sources */,
+				6BEB2B131BD389E4001208BB /* Frameworks */,
+				6BEB2B141BD389E4001208BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BEB2B181BD389E4001208BB /* PBXTargetDependency */,
+			);
+			name = ScrollingNavBarUITests;
+			productName = ScrollingNavBarUITests;
+			productReference = 6BEB2B161BD389E4001208BB /* ScrollingNavBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BEB2AEF1BD389E4001208BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = suze;
+				TargetAttributes = {
+					6BEB2AF61BD389E4001208BB = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UN2694RSVD;
+					};
+					6BEB2B0A1BD389E4001208BB = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UN2694RSVD;
+						TestTargetID = 6BEB2AF61BD389E4001208BB;
+					};
+					6BEB2B151BD389E4001208BB = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UN2694RSVD;
+						TestTargetID = 6BEB2AF61BD389E4001208BB;
+					};
+				};
+			};
+			buildConfigurationList = 6BEB2AF21BD389E4001208BB /* Build configuration list for PBXProject "ScrollingNavBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BEB2AEE1BD389E4001208BB;
+			productRefGroup = 6BEB2AF81BD389E4001208BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BEB2AF61BD389E4001208BB /* ScrollingNavBar */,
+				6BEB2B0A1BD389E4001208BB /* ScrollingNavBarTests */,
+				6BEB2B151BD389E4001208BB /* ScrollingNavBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BEB2AF51BD389E4001208BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEB2B051BD389E4001208BB /* LaunchScreen.storyboard in Resources */,
+				6BEB2B021BD389E4001208BB /* Assets.xcassets in Resources */,
+				6BEB2B001BD389E4001208BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEB2B091BD389E4001208BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEB2B141BD389E4001208BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BEB2AF31BD389E4001208BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEB2AFD1BD389E4001208BB /* ViewController.swift in Sources */,
+				6BEB2AFB1BD389E4001208BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEB2B071BD389E4001208BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEB2B101BD389E4001208BB /* ScrollingNavBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BEB2B121BD389E4001208BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEB2B1B1BD389E4001208BB /* ScrollingNavBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BEB2B0D1BD389E4001208BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BEB2AF61BD389E4001208BB /* ScrollingNavBar */;
+			targetProxy = 6BEB2B0C1BD389E4001208BB /* PBXContainerItemProxy */;
+		};
+		6BEB2B181BD389E4001208BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BEB2AF61BD389E4001208BB /* ScrollingNavBar */;
+			targetProxy = 6BEB2B171BD389E4001208BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BEB2AFE1BD389E4001208BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BEB2AFF1BD389E4001208BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BEB2B031BD389E4001208BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BEB2B041BD389E4001208BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BEB2B1D1BD389E4001208BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BEB2B1E1BD389E4001208BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BEB2B201BD389E4001208BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScrollingNavBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.ScrollingNavBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6BEB2B211BD389E4001208BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScrollingNavBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.ScrollingNavBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6BEB2B231BD389E4001208BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScrollingNavBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.ScrollingNavBarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollingNavBar.app/ScrollingNavBar";
+			};
+			name = Debug;
+		};
+		6BEB2B241BD389E4001208BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScrollingNavBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.ScrollingNavBarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollingNavBar.app/ScrollingNavBar";
+			};
+			name = Release;
+		};
+		6BEB2B261BD389E4001208BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScrollingNavBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.ScrollingNavBarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScrollingNavBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6BEB2B271BD389E4001208BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ScrollingNavBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.ScrollingNavBarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ScrollingNavBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BEB2AF21BD389E4001208BB /* Build configuration list for PBXProject "ScrollingNavBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEB2B1D1BD389E4001208BB /* Debug */,
+				6BEB2B1E1BD389E4001208BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BEB2B1F1BD389E4001208BB /* Build configuration list for PBXNativeTarget "ScrollingNavBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEB2B201BD389E4001208BB /* Debug */,
+				6BEB2B211BD389E4001208BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6BEB2B221BD389E4001208BB /* Build configuration list for PBXNativeTarget "ScrollingNavBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEB2B231BD389E4001208BB /* Debug */,
+				6BEB2B241BD389E4001208BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6BEB2B251BD389E4001208BB /* Build configuration list for PBXNativeTarget "ScrollingNavBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BEB2B261BD389E4001208BB /* Debug */,
+				6BEB2B271BD389E4001208BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BEB2AEF1BD389E4001208BB /* Project object */;
+}
