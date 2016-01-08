@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B55CFC21C191CF500F9D18C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55CFC11C191CF500F9D18C /* CustomTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		6BFE1E091C12C596002B5C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE1E081C12C596002B5C47 /* AppDelegate.swift */; };
 		6BFE1E0B1C12C596002B5C47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE1E0A1C12C596002B5C47 /* ViewController.swift */; };
 		6BFE1E0E1C12C596002B5C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE1E0C1C12C596002B5C47 /* Main.storyboard */; };
 		6BFE1E101C12C596002B5C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE1E0F1C12C596002B5C47 /* Assets.xcassets */; };
 		6BFE1E131C12C596002B5C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFE1E111C12C596002B5C47 /* LaunchScreen.storyboard */; };
+		6BFE1E1B1C12C5B6002B5C47 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE1E1A1C12C5B6002B5C47 /* CustomLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		6BFE1E1D1C12C63C002B5C47 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE1E1C1C12C63C002B5C47 /* CollectionCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B55CFC11C191CF500F9D18C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		6BFE1E051C12C596002B5C47 /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFE1E081C12C596002B5C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BFE1E0A1C12C596002B5C47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		6BFE1E0F1C12C596002B5C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BFE1E121C12C596002B5C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BFE1E141C12C596002B5C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BFE1E1A1C12C5B6002B5C47 /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		6BFE1E1C1C12C63C002B5C47 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				6BFE1E0F1C12C596002B5C47 /* Assets.xcassets */,
 				6BFE1E111C12C596002B5C47 /* LaunchScreen.storyboard */,
 				6BFE1E141C12C596002B5C47 /* Info.plist */,
+				6BFE1E1A1C12C5B6002B5C47 /* CustomLayout.swift */,
+				6BFE1E1C1C12C63C002B5C47 /* CollectionCell.swift */,
+				6B55CFC11C191CF500F9D18C /* CustomTableViewCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -135,6 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BFE1E0B1C12C596002B5C47 /* ViewController.swift in Sources */,
+				6B55CFC21C191CF500F9D18C /* CustomTableViewCell.swift in Sources */,
+				6BFE1E1B1C12C5B6002B5C47 /* CustomLayout.swift in Sources */,
+				6BFE1E1D1C12C63C002B5C47 /* CollectionCell.swift in Sources */,
 				6BFE1E091C12C596002B5C47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +295,7 @@
 				6BFE1E191C12C596002B5C47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

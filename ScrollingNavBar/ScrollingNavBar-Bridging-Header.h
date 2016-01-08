@@ -8,6 +8,5 @@
 
 #ifndef ScrollingNavBar_Bridging_Header_h
 #define ScrollingNavBar_Bridging_Header_h
-
-
+#import "TBXML.h"
 #endif /* ScrollingNavBar_Bridging_Header_h */

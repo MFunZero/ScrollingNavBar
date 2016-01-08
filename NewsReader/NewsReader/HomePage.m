@@ -8,9 +8,6 @@
 
 #import "HomePage.h"
 
-@interface HomePage ()
-
-@end
 
 @implementation HomePage
 

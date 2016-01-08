@@ -14,6 +14,11 @@
 		6B112BCA1BD679FC00CCF224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B112BC81BD679FC00CCF224 /* LaunchScreen.storyboard */; };
 		6B112BD51BD679FC00CCF224 /* MetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B112BD41BD679FC00CCF224 /* MetalTests.swift */; };
 		6B112BE01BD679FC00CCF224 /* MetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B112BDF1BD679FC00CCF224 /* MetalUITests.swift */; };
+		6BD3B4791BD74F8000300FC3 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6BD3B4781BD74F8000300FC3 /* Shader.metal */; settings = {ASSET_TAGS = (); }; };
+		6BD3B47F1BD7543B00300FC3 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD3B47C1BD7543B00300FC3 /* Metal.framework */; };
+		6BD3B4801BD7543B00300FC3 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD3B47D1BD7543B00300FC3 /* MetalKit.framework */; };
+		6BD3B4811BD7543B00300FC3 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD3B47E1BD7543B00300FC3 /* MetalPerformanceShaders.framework */; };
+		6BD3B4831BD7549300300FC3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD3B4821BD7549300300FC3 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,12 @@
 		6B112BDB1BD679FC00CCF224 /* MetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B112BDF1BD679FC00CCF224 /* MetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalUITests.swift; sourceTree = "<group>"; };
 		6B112BE11BD679FC00CCF224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B112BF31BD67DF700CCF224 /* Metal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metal-Bridging-Header.h"; sourceTree = "<group>"; };
+		6BD3B4781BD74F8000300FC3 /* Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		6BD3B47C1BD7543B00300FC3 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		6BD3B47D1BD7543B00300FC3 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		6BD3B47E1BD7543B00300FC3 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		6BD3B4821BD7549300300FC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD3B4831BD7549300300FC3 /* QuartzCore.framework in Frameworks */,
+				6BD3B47F1BD7543B00300FC3 /* Metal.framework in Frameworks */,
+				6BD3B4801BD7543B00300FC3 /* MetalKit.framework in Frameworks */,
+				6BD3B4811BD7543B00300FC3 /* MetalPerformanceShaders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,10 @@
 		6B112BB31BD679FC00CCF224 = {
 			isa = PBXGroup;
 			children = (
+				6BD3B4821BD7549300300FC3 /* QuartzCore.framework */,
+				6BD3B47C1BD7543B00300FC3 /* Metal.framework */,
+				6BD3B47D1BD7543B00300FC3 /* MetalKit.framework */,
+				6BD3B47E1BD7543B00300FC3 /* MetalPerformanceShaders.framework */,
 				6B112BBE1BD679FC00CCF224 /* Metal */,
 				6B112BD31BD679FC00CCF224 /* MetalTests */,
 				6B112BDE1BD679FC00CCF224 /* MetalUITests */,
@@ -103,6 +122,8 @@
 				6B112BC61BD679FC00CCF224 /* Assets.xcassets */,
 				6B112BC81BD679FC00CCF224 /* LaunchScreen.storyboard */,
 				6B112BCB1BD679FC00CCF224 /* Info.plist */,
+				6B112BF31BD67DF700CCF224 /* Metal-Bridging-Header.h */,
+				6BD3B4781BD74F8000300FC3 /* Shader.metal */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -258,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD3B4791BD74F8000300FC3 /* Shader.metal in Sources */,
 				6B112BC21BD679FC00CCF224 /* ViewController.swift in Sources */,
 				6B112BC01BD679FC00CCF224 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.Metal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Metal/Metal-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -416,6 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.Metal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Metal/Metal-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -486,6 +510,7 @@
 				6B112BE61BD679FC00CCF224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B112BE71BD679FC00CCF224 /* Build configuration list for PBXNativeTarget "MetalTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +519,7 @@
 				6B112BE91BD679FC00CCF224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B112BEA1BD679FC00CCF224 /* Build configuration list for PBXNativeTarget "MetalUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +528,7 @@
 				6B112BEC1BD679FC00CCF224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

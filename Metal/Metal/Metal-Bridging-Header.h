@@ -8,6 +8,6 @@
 
 #ifndef Metal_Bridging_Header_h
 #define Metal_Bridging_Header_h
-
-
+#import "Metal/Metal.h"
+#import "QuartzCore/QuartzCore.h"
 #endif /* Metal_Bridging_Header_h */

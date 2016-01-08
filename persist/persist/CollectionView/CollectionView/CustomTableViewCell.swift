@@ -10,9 +10,16 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    var detailLabel:UILabel = UILabel()
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        detailLabel.frame = CGRect(x: 100, y: 0, width: self.frame.width / 3, height: 35)
+        detailTextLabel
+    self.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
