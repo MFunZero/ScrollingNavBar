@@ -17,9 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+
+        if isiPhone5(){
+        FxLog("Start")
+        }
+        
+        showGuide()
         return true
     }
 
+    func showGuide()
+    {
+        let page=GuidePage()
+        
+        self.window?.rootViewController = page
+        self.window?.makeKeyAndVisible()
+        
+    }
     func applicationWillResignActive(application: UIApplication)
     {
     }
@@ -45,7 +60,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL =
     {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1]
+        return urls[
+            urls.count-1]
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel =

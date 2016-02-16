@@ -8,6 +8,6 @@
 
 import UIKit
 
-class LocationInfo: FXBasePage {
+class LocationInfo: NSObject {
 
 }
