@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CAC7A6C1C90024800109FD0 /* SearchResultViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC7A6B1C90024800109FD0 /* SearchResultViewLayout.swift */; };
 		6B078CCB1C69B21700E7250C /* account_comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B078CCA1C69B21700E7250C /* account_comment.png */; };
 		6B078CCE1C69B71B00E7250C /* upvote_singlepicture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B078CCC1C69B71B00E7250C /* upvote_singlepicture@2x.png */; };
 		6B078CCF1C69B71B00E7250C /* write_comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B078CCD1C69B71B00E7250C /* write_comment@2x.png */; };
@@ -164,6 +165,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CAC7A6B1C90024800109FD0 /* SearchResultViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewLayout.swift; sourceTree = "<group>"; };
 		6B078CCA1C69B21700E7250C /* account_comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = account_comment.png; sourceTree = "<group>"; };
 		6B078CCC1C69B71B00E7250C /* upvote_singlepicture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upvote_singlepicture@2x.png"; sourceTree = "<group>"; };
 		6B078CCD1C69B71B00E7250C /* write_comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "write_comment@2x.png"; sourceTree = "<group>"; };
@@ -649,6 +651,7 @@
 				6BA74DC91C4CC3C900BDFF47 /* Refresh */,
 				6BEC72731C4741CA008BEA16 /* CollectionViewLayout.swift */,
 				6BA7C8AF1C5F1DE5007FC58C /* UserCollectionLayout.swift */,
+				2CAC7A6B1C90024800109FD0 /* SearchResultViewLayout.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -970,6 +973,7 @@
 				6BA74DD31C4CC5B700BDFF47 /* RefreshBaseView.swift in Sources */,
 				6B9E46A51C49E422000B14F9 /* Collection.swift in Sources */,
 				6B92BA801C65D6D400FF4312 /* CustomTableViewCell.swift in Sources */,
+				2CAC7A6C1C90024800109FD0 /* SearchResultViewLayout.swift in Sources */,
 				6BD9FF7E1C5469F3005117B2 /* extension.swift in Sources */,
 				6BD29C8A1C45EE790048F3E9 /* SinglePictureInfo.swift in Sources */,
 				6B9519B91C623D86004FA1A6 /* EnterPageViewController.swift in Sources */,
@@ -1113,6 +1117,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1120,7 +1125,7 @@
 					"$(PROJECT_DIR)/ThirdSDK",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "/Users/suzeepp/Documents/SwiftCode/毕设/Originality/Originality/Resource/Config/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Originality/Resource/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1129,7 +1134,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = origin.Originality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/suzeepp/Documents/SwiftCode/毕设/Originality/Originality/Resource/Config/Originality-Bridging-Header.h";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fanzz/Documents/SwiftCode/毕设/Originality/Originality/Resource/Config/Originality-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1140,6 +1146,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1147,7 +1154,7 @@
 					"$(PROJECT_DIR)/ThirdSDK",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "/Users/suzeepp/Documents/SwiftCode/毕设/Originality/Originality/Resource/Config/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Originality/Resource/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1156,7 +1163,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = origin.Originality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/suzeepp/Documents/SwiftCode/毕设/Originality/Originality/Resource/Config/Originality-Bridging-Header.h";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fanzz/Documents/SwiftCode/毕设/Originality/Originality/Resource/Config/Originality-Bridging-Header.h";
 			};
 			name = Release;
 		};
